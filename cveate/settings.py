@@ -37,7 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+
+    'drf_yasg',
+    'rest_framework',
+    # 'rest_framework.auth',
+
     # Local app
     'cv',
 ]
@@ -121,3 +125,27 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MEDIA_URL = '/media/'   # new
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')   # new
+
+
+SWAGGER_SETTINGS = {
+    'SHOW_REQUEST_HEADERS': True,
+    'SUPPORTED_SUBMIT_METHODS': [
+        'get',
+        'post',
+        'put',
+        'delete',
+    ],
+    'SECURITY_DEFINITIONS': {
+        'api_key': {
+            'type': 'apiKey',
+            'in': 'header',
+            'name': 'Authorization'
+            }
+        },
+        'USE_SESSION_AUTH': True,
+        'JSON_EDITOR': True,
+        'REFETCH_SCHEMA_ON_LOGOUT': True,
+}

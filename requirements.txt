@@ -1,0 +1,8 @@
+Django
+djangorestframework
+Pillow
+drf-yasg
+cairocffi==1.2.0
+CairoSVG==2.5.0
+WeasyPrint==51
+django-renderpdf==3.0.0

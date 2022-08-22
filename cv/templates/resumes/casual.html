@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Casual Resume</title>
+      <style>
+        /* :root{
+
+    --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+    --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+
+    --line: 1px solid var(--color-grey-light-2);
+
+    --default-font-size: 1rem;
+
+} */
+
+/* *,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+          h1,h2,h3,p, ul,li{
+              margin: 0;
+              padding: 0;
+          }
+          html {
+
+            font-size: 80%;
+
+
+} */
+body {
+    box-sizing: border-box;
+    padding-left: 15rem;
+              padding-right: 15rem;
+              padding-top: 5rem;
+              padding-bottom: 5rem;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--color-grey-dark);
+    background-color: #E5E5E5;
+
+
+}
+
+
+          .container{
+              background-color: #FFF;
+          }
+          .header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background: black;
+            color: white;
+            padding: 3rem;
+          }
+          .title_section{
+            flex-direction: row;
+
+          }
+          .name{
+
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 35px;
+            margin-bottom: 1rem;
+          }
+          .job_title{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+          }
+          .contact{
+
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            margin-bottom: 1rem;
+            padding-top: .9rem;
+            /* identical to box height */
+          }
+          .content{
+            background:linear-gradient(to right,  #d8dada 35%,#f6f6f6 30%,#f6f6f6 100%);
+            padding: 2rem;
+          }
+          .flex-box{
+              display: flex;
+              justify-content: space-between;
+
+          }
+          .letter-box{
+              margin-top: 1rem;
+              margin-bottom: 2rem;
+          }
+          .letter{
+
+            font-weight: normal;
+            font-size: var(--default-font-size);
+            line-height: 1.5rem;
+            white-space: pre-line;
+
+            color: #000000;
+
+          }
+          .divider{
+              padding: 0.01rem;
+              background-color: lightgrey;
+          }
+          .qualification_box{
+              display: flex;
+              flex-direction: row;
+              margin-top: 0.5rem;
+              margin-bottom: 0.5rem;
+          }
+          .date_box{
+              flex: 0.50;
+          }
+          .item_box{
+              flex: 0.8;
+              margin-bottom: 1.5rem;
+
+          }
+
+          .qualification_date{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+            padding-top: .4rem;
+            /* identical to box height */
+
+            color: #000000;
+            }
+
+            .item_title{
+
+                font-style: normal;
+                font-weight: bold;
+                font-size: 1.1rem;
+
+
+                /* identical to box height */
+
+                color: #000000;
+            }
+            .item_sub-title{
+               font-style: italic;
+                font-weight: 500;
+                color: #000000;
+            }
+
+            .item-lists{
+
+                padding: 0;
+                margin-top: 0.5rem;
+            }
+            .item-list{
+
+                font-style: normal;
+                font-weight: 300;
+                font-size: var(--default-font-size);
+
+                color: #000000;
+
+            }
+
+            .empty-item{
+
+                margin-bottom: 0.5rem;
+                color: #000000;
+
+            }
+            .link-title{
+                font-weight: 800;
+                color: grey;
+                text-transform: capitalize;
+                margin-right: 1rem;
+            }
+            .link-text{
+                font-weight: 100;
+
+            }
+
+
+            .skill-title{
+                font-weight: 800;
+                color: #000000;
+                text-transform: capitalize;
+                margin-right: 0.7rem;
+            }
+            .skill-level{
+                font-weight: 300;
+                color: #AEAEAE;
+                font-style: italic;
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+
+            .skills{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                flex-wrap: wrap;
+            }
+            .skills-item{
+               width: 50%;
+               display: flex;
+               flex-direction: row;
+
+
+                font-weight: 500;
+                font-size: 0.9rem;
+                margin-bottom: 0.5rem;
+                color: #000000;
+
+
+            }
+
+            .referees{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                flex-wrap: wrap;
+            }
+            .referees-item{
+               width: 50%;
+
+                margin-bottom: 0.5rem;
+
+
+            }
+            .referee-about{
+                margin-top: 0.3rem;
+                margin-bottom: 0.3rem;
+                font-weight: normal;
+            }
+            .referee-number{
+
+                color: #000000;
+               margin-left: 1rem;
+            }
+            .referee-email{
+                color: #000000;
+                margin-left: 1rem;
+            }
+            .bullet-item{
+                display: flex;
+                flex-direction: row;
+
+                align-items: center;
+
+            }
+           .bullet{
+               margin-right: 0.5rem;
+               padding: 5px;
+               background-color: #000;
+               border-radius: 50%;
+           }
+
+
+
+      </style>
+    </head>
+    <body>
+        <div class="container">
+            <section class="header">
+                <div class="title_section">
+                    <h2 class="name"> {{ resume.first_name }} {{ resume.last_name }}</h2>
+                    <p class="job_title">{{ resume.job_title }}</p>
+                </div>
+                <div class="contact_section">
+                    <p class="contact">{{ profile.phone_number }}</p>
+                    <p class="contact">{{ resume.email }}</p>
+
+                </div>
+
+<!-- PROFESSIONAL SUMMARY -->
+
+            </section>
+            <section class="content">
+                <section>
+                    <div class="qualification">
+                        <h3 class="qualification_title">Professional Summary</h3>
+                        <div class="divider"></div>
+                        <div class="qualification_box">
+                            <div class="date_box">
+                            </div>
+                            <div class="item_box">
+                                <div class="item-lists">
+                                    <p>{{ resume.professional_summary }}</p>
+                               </div>
+                            </div>
+                        </div>
+
+<!-- WORK EXPERIENCE -->
+{% if employment_history %}
+                        <h3>Work Experience</h3>
+                        <div class="divider"></div>
+                        {% for exp in employment_history %}
+                        <div class="qualification_box">
+                            <div class="date_box">
+                            </div>
+                            <div class="item_box">
+                                <div class="flex-box">
+                                    <p class="item_title"></p>{{ exp.role_title }} - {{ exp.employer }}, {{ exp.city }}</p>
+                                    <p class="qualification_date">{{ exp.start_date }} - {{ exp.end_date }}</p>
+                                </div>
+                                <div class="item-lists">
+                                 <p class="bullet-item"><span class="bullet"></span><span class="item-list">{{ exp.description }}</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+                    </div>
+{% endif %}
+
+<!-- EDUCATION HISTORY -->
+{% if education_history %}
+                    <div class="qualification">
+                        <h3 class="qualification_title">Education</h3>
+                        <div class="divider"></div>
+                        {% for edu in education_history %}
+                        <div class="qualification_box">
+                            <div class="date_box"></div>
+                            <div class="item_box">
+                                <div class="flex-box">
+                                    <p class="item_title">{{ edu.degree }}</p>
+                                    <i class="item_sub-title">{{ edu.school }}, {{ edu.city }}</i>
+                                </div>
+                                {% if edu.description %}
+                        <div class="item-lists">
+                        <!-- <p class="bullet-item">
+                            <span class="bullet"></span
+                            >
+                        </p> -->
+                        {% endif %}
+                        <span class="item-list"
+                            >{{ edu.description }}</span
+                        >
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+{% endif %}
+
+<!-- SKILLS -->
+{% if skills %}
+                    <div class="qualification">
+                        <h3 class="qualification_title">Skills</h3>
+                        <div class="divider"></div>
+
+                        <div class="qualification_box">
+                        <div class="date_box"></div>
+                        <div class="item_box">
+                            <div class="skills">
+
+                            {% for skill in skills %}
+                            <div class="skills-item">
+                                <!-- <p class="bullet-item">
+                                <span class="bullet"></span
+                                > -->
+                                <span class="item-list">{{ skill.skill }}</span>
+                                </p>
+                                <span class="skill-level">{{ skill.level }}</span>
+                            </div>
+                            {% endfor %}
+
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+{% endif %}
+
+<!-- QUALIFICATIONS -->
+{% if qualifications %}
+                    <div class="qualification">
+                        <h3 class="qualification_title">Qualifications</h3>
+                        <div class="divider"></div>
+
+                        {% for qualification in qualifications %}
+                        <div class="qualification_box">
+                            <div class="date_box">
+
+                            </div>
+                            <div class="item_box">
+                                <div class="flex-box">
+                                    <div>
+                                    <p class="item_title">{{ qualification.qualification }}</p>
+                                    <i class="item_sub-title">{{ qualification.institution }}</i>
+                                </div>
+                                <p class="qualification_date">{{ qualification.start_date }} - {{ qualification.end_date }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+
+{% endif %}
+
+<!-- LINKS -->
+{% if web_social_links %}
+                    <div class="qualification">
+                        <h3 class="qualification_title">Links (web & Social)</h3>
+                        <div class="divider"></div>
+
+                        <div class="qualification_box">
+                            <div class="date_box">
+
+                            </div>
+                            <div class="item_box">
+                                {% for web in web_social_links %}
+                                <ul class="empty-item{">
+                                    <li class="item-list"><span class="link-title">{{  web.label }}: </span> <span class="link-text">{{ web.link }}</span></li>
+
+
+                                </ul>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+{% endif %}
+
+<!-- REFREES -->
+{% if references %}
+                    <div class="qualification">
+                        <h3 class="qualification_title">Referees</h3>
+                        <div class="divider"></div>
+
+                        <div class="qualification_box">
+                            <div class="date_box">
+
+                            </div>
+                            <div class="item_box">
+                                <div class="referees">
+                                    {% for ref in references %}
+                                   <div class="referees-item">
+                                       <p class="referee-name">{{ref.reference_full_name }}</p>
+                                       <p class="referee-company">{{ ref.company }}</p>
+                                       <p class="referee-email">{{ ref.email }}</p>
+                                       <p class="referee-number">{{ ref.phone_number }}</p>
+                                   </div>
+                                   {% endfor %}
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+{% endif %}
+
+
+                </section>
+            </section>
+
+        </div>
+
+    </body>
+</html>
